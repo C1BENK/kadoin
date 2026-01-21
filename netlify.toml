@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_SUPABASE_URL = "https://papeqnnfklooytwtlncd.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_cZiJIKHd6uWhKtfMmkpKhg_F-ev_UMV"
+  NEXT_PUBLIC_APP_URL = "https://kadoin-kamu.netlify.app"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Untuk handling dynamic routes
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

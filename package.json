@@ -1,0 +1,38 @@
+{
+  "name": "kadoin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+    "lint": "next lint",
+    "netlify-build": "next build && next export",
+    "setup:db": "node scripts/setup-db.js"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.91.0",
+    "dayjs": "^1.11.19",
+    "framer-motion": "^12.27.5",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-dropzone": "^14.3.8",
+    "react-hook-form": "^7.71.1",
+    "react-hot-toast": "^2.6.0",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.30",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "@netlify/plugin-next.js": "^4.28.4"
+  }
+}
